@@ -2,12 +2,17 @@
 //  TaskDetailViewController.swift
 //  Task
 //
+<<<<<<< Updated upstream
 //  Created by Cameron Stuart on 12/29/20.
+=======
+//  Created by Gavin Craft on 4/21/21.
+>>>>>>> Stashed changes
 //
 
 import UIKit
 
 class TaskDetailViewController: UIViewController {
+<<<<<<< Updated upstream
 
     @IBOutlet weak var taskNameTextField: UITextField!
     @IBOutlet weak var taskNotesTextView: UITextView!
@@ -42,4 +47,37 @@ class TaskDetailViewController: UIViewController {
         taskNotesTextView.text = task.notes
         taskDueDatePicker.date = task.dueDate ?? Date()
     }
+=======
+    //MARK: - iboutlets
+    @IBOutlet weak var titleField: UITextField!
+    @IBOutlet weak var noteField: UITextView!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    //MARK: - ibaction
+    @IBAction func saveButtonPressed(_ sender: Any) {
+        titleField.becomeFirstResponder()
+        titleField.resignFirstResponder()
+    }
+    
+    @IBAction func dueDatePickerTimeChanged(_ sender: Any) {
+    }
+    //MARK: - properties
+    
+    
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+>>>>>>> Stashed changes
 }

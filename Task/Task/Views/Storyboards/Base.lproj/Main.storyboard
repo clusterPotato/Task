@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DAu-ri-Ihh">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yhm-Xh-YpY">
+>>>>>>> Stashed changes
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,15 +12,24 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+<<<<<<< Updated upstream
         <!--Task List Table View Controller-->
         <scene sceneID="Am4-V0-aRG">
             <objects>
                 <tableViewController id="ynV-Pc-IBY" customClass="TaskListTableViewController" customModule="Task" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cno-eR-DuI">
+=======
+        <!--list of tasks-->
+        <scene sceneID="sLd-Lh-BSZ">
+            <objects>
+                <tableViewController id="eQl-Fe-zpY" customClass="TaskListTableViewController" customModule="Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gpB-Tc-Yax">
+>>>>>>> Stashed changes
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
+<<<<<<< Updated upstream
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="taskCell" rowHeight="65" id="Sc7-gI-31H" customClass="TaskTableViewCell" customModule="Task" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -56,10 +69,44 @@
                                     <outlet property="completionButton" destination="SLa-uE-GRr" id="i2j-2M-yMo"/>
                                     <outlet property="taskNameLabel" destination="8yB-LU-z3b" id="Zka-PW-cxB"/>
                                     <segue destination="KHt-IZ-TrN" kind="show" identifier="showTaskDetail" id="yGm-gD-0Wk"/>
+=======
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="56" id="7KU-fG-BeB" customClass="TaskTableViewCell" customModule="Task" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="56"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7KU-fG-BeB" id="8zr-J7-HIR">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*default dances*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cr6-TY-jJC">
+                                            <rect key="frame" x="16" y="17.5" width="141" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPJ-6d-aTP">
+                                            <rect key="frame" x="350" y="8" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="gPJ-6d-aTP" secondAttribute="height" multiplier="1:1" id="kqH-Gv-lae"/>
+                                            </constraints>
+                                            <state key="normal" image="incomplete"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="gPJ-6d-aTP" secondAttribute="trailing" constant="24" id="2OX-Ka-qRc"/>
+                                        <constraint firstItem="Cr6-TY-jJC" firstAttribute="centerY" secondItem="8zr-J7-HIR" secondAttribute="centerY" id="Pto-ff-BrW"/>
+                                        <constraint firstItem="gPJ-6d-aTP" firstAttribute="top" secondItem="8zr-J7-HIR" secondAttribute="top" constant="8" id="XcM-2p-Lct"/>
+                                        <constraint firstItem="Cr6-TY-jJC" firstAttribute="leading" secondItem="8zr-J7-HIR" secondAttribute="leading" constant="16" id="hMN-J9-u35"/>
+                                        <constraint firstAttribute="bottom" secondItem="gPJ-6d-aTP" secondAttribute="bottom" constant="8" id="wfu-px-nmU"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="t8l-8q-P53" kind="show" identifier="TaskCellToDeatail" id="KvB-Bw-FnG"/>
+>>>>>>> Stashed changes
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
+<<<<<<< Updated upstream
                             <outlet property="dataSource" destination="ynV-Pc-IBY" id="03M-9u-Bjt"/>
                             <outlet property="delegate" destination="ynV-Pc-IBY" id="29F-eC-9Uj"/>
                         </connections>
@@ -68,10 +115,21 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="gAE-lY-EkE">
                             <connections>
                                 <segue destination="KHt-IZ-TrN" kind="show" id="26j-En-iDa"/>
+=======
+                            <outlet property="dataSource" destination="eQl-Fe-zpY" id="amM-2Y-rFP"/>
+                            <outlet property="delegate" destination="eQl-Fe-zpY" id="wOw-Vg-50H"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="list of tasks" id="mOx-Zq-tXD">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gBy-Rv-ES9">
+                            <connections>
+                                <segue destination="t8l-8q-P53" kind="show" id="Nqk-Vl-zbN"/>
+>>>>>>> Stashed changes
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
+<<<<<<< Updated upstream
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTx-ad-yNm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="871.01449275362324" y="18.75"/>
@@ -124,10 +182,66 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="GFd-vp-IZQ">
                             <connections>
                                 <action selector="saveButtonTapped:" destination="KHt-IZ-TrN" id="JI0-p9-gkJ"/>
+=======
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zw6-WM-79U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092.753623188406" y="141.96428571428569"/>
+        </scene>
+        <!--Task Detail View Controller-->
+        <scene sceneID="IKs-d3-OwV">
+            <objects>
+                <viewController id="t8l-8q-P53" customClass="TaskDetailViewController" customModule="Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i4O-cA-V0a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter task name here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z5j-fd-co8">
+                                <rect key="frame" x="32" y="120" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="enter notes herre" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oYa-xr-D9O">
+                                <rect key="frame" x="8" y="170" width="398" height="421"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="gJb-Jk-erv">
+                                <rect key="frame" x="16" y="607" width="382" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="vPm-Up-D43"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="dueDatePickerTimeChanged:" destination="t8l-8q-P53" eventType="valueChanged" id="t7Y-pA-vCO"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rKL-yK-Ueu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gJb-Jk-erv" firstAttribute="top" secondItem="oYa-xr-D9O" secondAttribute="bottom" constant="16" id="10W-0U-KlM"/>
+                            <constraint firstItem="rKL-yK-Ueu" firstAttribute="trailing" secondItem="Z5j-fd-co8" secondAttribute="trailing" constant="32" id="AP3-hJ-WwC"/>
+                            <constraint firstItem="gJb-Jk-erv" firstAttribute="leading" secondItem="rKL-yK-Ueu" secondAttribute="leading" constant="16" id="B10-nr-SCL"/>
+                            <constraint firstAttribute="trailing" secondItem="gJb-Jk-erv" secondAttribute="trailing" constant="16" id="QtO-iL-V5g"/>
+                            <constraint firstItem="rKL-yK-Ueu" firstAttribute="trailing" secondItem="oYa-xr-D9O" secondAttribute="trailing" constant="8" id="SMO-Ca-GZs"/>
+                            <constraint firstItem="Z5j-fd-co8" firstAttribute="top" secondItem="rKL-yK-Ueu" secondAttribute="top" constant="32" id="aHu-HV-clq"/>
+                            <constraint firstItem="oYa-xr-D9O" firstAttribute="leading" secondItem="rKL-yK-Ueu" secondAttribute="leading" constant="8" id="k99-sm-RRa"/>
+                            <constraint firstItem="Z5j-fd-co8" firstAttribute="leading" secondItem="rKL-yK-Ueu" secondAttribute="leading" constant="32" id="kyr-ee-iyc"/>
+                            <constraint firstItem="oYa-xr-D9O" firstAttribute="top" secondItem="Z5j-fd-co8" secondAttribute="bottom" constant="16" id="oq5-cL-wmV"/>
+                            <constraint firstItem="rKL-yK-Ueu" firstAttribute="bottom" secondItem="gJb-Jk-erv" secondAttribute="bottom" constant="180" id="wS5-bz-ev1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HId-EG-j1M">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="oQR-ul-RIW">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="t8l-8q-P53" id="HdF-rQ-Lgu"/>
+>>>>>>> Stashed changes
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+<<<<<<< Updated upstream
                         <outlet property="taskDueDatePicker" destination="nRa-N7-sp3" id="unT-yN-dUA"/>
                         <outlet property="taskNameTextField" destination="dAu-mG-3Tb" id="uTR-qK-ZWB"/>
                         <outlet property="taskNotesTextView" destination="5rX-Fe-dsv" id="voP-TD-AzA"/>
@@ -143,11 +257,29 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DAu-ri-Ihh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EeY-dO-P77">
+=======
+                        <outlet property="datePicker" destination="gJb-Jk-erv" id="fUm-Ar-trJ"/>
+                        <outlet property="noteField" destination="oYa-xr-D9O" id="RSI-zk-2kl"/>
+                        <outlet property="titleField" destination="Z5j-fd-co8" id="UVZ-S5-BDM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4VM-iH-OrH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1915" y="136"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dfS-iO-QcS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yhm-Xh-YpY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i1k-cU-ENB">
+>>>>>>> Stashed changes
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
+<<<<<<< Updated upstream
                         <segue destination="ynV-Pc-IBY" kind="relationship" relationship="rootViewController" id="OMK-MG-bDO"/>
                     </connections>
                 </navigationController>
@@ -160,6 +292,21 @@
         <segue reference="26j-En-iDa"/>
     </inferredMetricsTieBreakers>
     <resources>
+=======
+                        <segue destination="eQl-Fe-zpY" kind="relationship" relationship="rootViewController" id="PV3-v5-4f5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u7W-hF-eIi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="182.60869565217394" y="141.96428571428569"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="KvB-Bw-FnG"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="incomplete" width="512" height="512"/>
+>>>>>>> Stashed changes
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
